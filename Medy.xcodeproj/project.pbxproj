@@ -18,6 +18,7 @@
 		544008702C4C66880062302B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5440086F2C4C66880062302B /* CoreDataStack.swift */; };
 		5446BDEA2C4FF85C0072254A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446BDE92C4FF85C0072254A /* SceneDelegate.swift */; };
 		544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544BD2CF2C5005B8004ACC03 /* SectionView.swift */; };
+		54629C592C5C0FD50011FDC2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54629C582C5C0FD50011FDC2 /* Config.plist */; };
 		5499B02A2C5ACB3300AED6DA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499B0292C5ACB3300AED6DA /* ThemeManager.swift */; };
 		54C228432C4EE5C400E56592 /* Medy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C228412C4EE5C400E56592 /* Medy.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		5446BDE92C4FF85C0072254A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5446BDEB2C4FFC700072254A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544BD2CF2C5005B8004ACC03 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		54629C582C5C0FD50011FDC2 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		5499B0292C5ACB3300AED6DA /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		54C228422C4EE5C400E56592 /* Medy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medy.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				5432E4A82C4D6CA90090504B /* MoreView.swift */,
 				5499B0292C5ACB3300AED6DA /* ThemeManager.swift */,
 				544BD2CF2C5005B8004ACC03 /* SectionView.swift */,
+				54629C582C5C0FD50011FDC2 /* Config.plist */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54629C592C5C0FD50011FDC2 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
