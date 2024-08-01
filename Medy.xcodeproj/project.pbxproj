@@ -10,7 +10,6 @@
 		5432E4A52C4D5E5A0090504B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4A42C4D5E590090504B /* PersistenceController.swift */; };
 		5432E4A72C4D6C9B0090504B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4A62C4D6C9B0090504B /* HomeView.swift */; };
 		5432E4A92C4D6CA90090504B /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4A82C4D6CA90090504B /* MoreView.swift */; };
-		5432E4AF2C4D90D40090504B /* GetDrugInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4AE2C4D90D40090504B /* GetDrugInfoView.swift */; };
 		544008522C4C5DC30062302B /* MedyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008512C4C5DC30062302B /* MedyApp.swift */; };
 		544008542C4C5DC30062302B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008532C4C5DC30062302B /* ContentView.swift */; };
 		544008632C4C5E900062302B /* MedicationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008622C4C5E900062302B /* MedicationListView.swift */; };
@@ -18,7 +17,8 @@
 		544008702C4C66880062302B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5440086F2C4C66880062302B /* CoreDataStack.swift */; };
 		5446BDEA2C4FF85C0072254A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446BDE92C4FF85C0072254A /* SceneDelegate.swift */; };
 		544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544BD2CF2C5005B8004ACC03 /* SectionView.swift */; };
-		54629C592C5C0FD50011FDC2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54629C582C5C0FD50011FDC2 /* Config.plist */; };
+		54629C5B2C5C14E50011FDC2 /* GetDrugInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C5A2C5C14E50011FDC2 /* GetDrugInfoView.swift */; };
+		54629C5D2C5C15130011FDC2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54629C5C2C5C15130011FDC2 /* Config.plist */; };
 		5499B02A2C5ACB3300AED6DA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499B0292C5ACB3300AED6DA /* ThemeManager.swift */; };
 		54C228432C4EE5C400E56592 /* Medy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C228412C4EE5C400E56592 /* Medy.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,6 @@
 		5432E4A42C4D5E590090504B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		5432E4A62C4D6C9B0090504B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5432E4A82C4D6CA90090504B /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
-		5432E4AE2C4D90D40090504B /* GetDrugInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrugInfoView.swift; sourceTree = "<group>"; };
 		5440084E2C4C5DC30062302B /* Medy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544008512C4C5DC30062302B /* MedyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedyApp.swift; sourceTree = "<group>"; };
 		544008532C4C5DC30062302B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,7 +39,8 @@
 		5446BDE92C4FF85C0072254A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5446BDEB2C4FFC700072254A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544BD2CF2C5005B8004ACC03 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		54629C582C5C0FD50011FDC2 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		54629C5A2C5C14E50011FDC2 /* GetDrugInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrugInfoView.swift; sourceTree = "<group>"; };
+		54629C5C2C5C15130011FDC2 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		5499B0292C5ACB3300AED6DA /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		54C228422C4EE5C400E56592 /* Medy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medy.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,11 +101,11 @@
 				544008532C4C5DC30062302B /* ContentView.swift */,
 				5432E4A62C4D6C9B0090504B /* HomeView.swift */,
 				544008622C4C5E900062302B /* MedicationListView.swift */,
-				5432E4AE2C4D90D40090504B /* GetDrugInfoView.swift */,
 				5432E4A82C4D6CA90090504B /* MoreView.swift */,
+				54629C5A2C5C14E50011FDC2 /* GetDrugInfoView.swift */,
 				5499B0292C5ACB3300AED6DA /* ThemeManager.swift */,
 				544BD2CF2C5005B8004ACC03 /* SectionView.swift */,
-				54629C582C5C0FD50011FDC2 /* Config.plist */,
+				54629C5C2C5C15130011FDC2 /* Config.plist */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54629C592C5C0FD50011FDC2 /* Config.plist in Resources */,
+				54629C5D2C5C15130011FDC2 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +207,7 @@
 				5432E4A72C4D6C9B0090504B /* HomeView.swift in Sources */,
 				5446BDEA2C4FF85C0072254A /* SceneDelegate.swift in Sources */,
 				544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */,
-				5432E4AF2C4D90D40090504B /* GetDrugInfoView.swift in Sources */,
+				54629C5B2C5C14E50011FDC2 /* GetDrugInfoView.swift in Sources */,
 				544008672C4C5ECB0062302B /* MedicationStore.swift in Sources */,
 				544008632C4C5E900062302B /* MedicationListView.swift in Sources */,
 				5432E4A92C4D6CA90090504B /* MoreView.swift in Sources */,
