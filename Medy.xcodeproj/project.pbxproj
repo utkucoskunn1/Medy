@@ -7,19 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5432E4A52C4D5E5A0090504B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4A42C4D5E590090504B /* PersistenceController.swift */; };
+		5432E4A72C4D6C9B0090504B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4A62C4D6C9B0090504B /* HomeView.swift */; };
+		5432E4A92C4D6CA90090504B /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4A82C4D6CA90090504B /* MoreView.swift */; };
+		5432E4AF2C4D90D40090504B /* GetDrugInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432E4AE2C4D90D40090504B /* GetDrugInfoView.swift */; };
 		544008522C4C5DC30062302B /* MedyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008512C4C5DC30062302B /* MedyApp.swift */; };
 		544008542C4C5DC30062302B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008532C4C5DC30062302B /* ContentView.swift */; };
-		544008562C4C5DC60062302B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544008552C4C5DC60062302B /* Assets.xcassets */; };
-		5440085A2C4C5DC60062302B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544008592C4C5DC60062302B /* Preview Assets.xcassets */; };
+		544008632C4C5E900062302B /* MedicationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008622C4C5E900062302B /* MedicationListView.swift */; };
+		544008672C4C5ECB0062302B /* MedicationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544008662C4C5ECB0062302B /* MedicationStore.swift */; };
+		544008702C4C66880062302B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5440086F2C4C66880062302B /* CoreDataStack.swift */; };
+		5446BDEA2C4FF85C0072254A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446BDE92C4FF85C0072254A /* SceneDelegate.swift */; };
+		544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544BD2CF2C5005B8004ACC03 /* SectionView.swift */; };
+		5499B02A2C5ACB3300AED6DA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499B0292C5ACB3300AED6DA /* ThemeManager.swift */; };
+		54C228432C4EE5C400E56592 /* Medy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C228412C4EE5C400E56592 /* Medy.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5432E4A42C4D5E590090504B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		5432E4A62C4D6C9B0090504B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5432E4A82C4D6CA90090504B /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		5432E4AE2C4D90D40090504B /* GetDrugInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrugInfoView.swift; sourceTree = "<group>"; };
 		5440084E2C4C5DC30062302B /* Medy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544008512C4C5DC30062302B /* MedyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedyApp.swift; sourceTree = "<group>"; };
 		544008532C4C5DC30062302B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		544008552C4C5DC60062302B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		544008572C4C5DC60062302B /* Medy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Medy.entitlements; sourceTree = "<group>"; };
 		544008592C4C5DC60062302B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		544008622C4C5E900062302B /* MedicationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationListView.swift; sourceTree = "<group>"; };
+		544008662C4C5ECB0062302B /* MedicationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationStore.swift; sourceTree = "<group>"; };
+		5440086F2C4C66880062302B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5446BDE92C4FF85C0072254A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5446BDEB2C4FFC700072254A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544BD2CF2C5005B8004ACC03 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		5499B0292C5ACB3300AED6DA /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		54C228422C4EE5C400E56592 /* Medy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medy.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,7 @@
 		544008452C4C5DC30062302B = {
 			isa = PBXGroup;
 			children = (
+				5446BDEB2C4FFC700072254A /* Info.plist */,
 				544008502C4C5DC30062302B /* Medy */,
 				5440084F2C4C5DC30062302B /* Products */,
 			);
@@ -53,10 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				544008512C4C5DC30062302B /* MedyApp.swift */,
-				544008532C4C5DC30062302B /* ContentView.swift */,
+				5440086A2C4C62940062302B /* Views */,
+				5440086C2C4C629F0062302B /* Models */,
+				5440086B2C4C629B0062302B /* Stores */,
+				544008582C4C5DC60062302B /* Preview Content */,
 				544008552C4C5DC60062302B /* Assets.xcassets */,
 				544008572C4C5DC60062302B /* Medy.entitlements */,
-				544008582C4C5DC60062302B /* Preview Content */,
 			);
 			path = Medy;
 			sourceTree = "<group>";
@@ -67,6 +91,40 @@
 				544008592C4C5DC60062302B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5440086A2C4C62940062302B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				544008532C4C5DC30062302B /* ContentView.swift */,
+				5432E4A62C4D6C9B0090504B /* HomeView.swift */,
+				544008622C4C5E900062302B /* MedicationListView.swift */,
+				5432E4AE2C4D90D40090504B /* GetDrugInfoView.swift */,
+				5432E4A82C4D6CA90090504B /* MoreView.swift */,
+				5499B0292C5ACB3300AED6DA /* ThemeManager.swift */,
+				544BD2CF2C5005B8004ACC03 /* SectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5440086B2C4C629B0062302B /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				54C228412C4EE5C400E56592 /* Medy.xcdatamodeld */,
+			);
+			name = Stores;
+			path = "/Users/utku/Desktop/App Projects/Medy/Medy/Stores";
+			sourceTree = "<absolute>";
+		};
+		5440086C2C4C629F0062302B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5446BDE92C4FF85C0072254A /* SceneDelegate.swift */,
+				544008662C4C5ECB0062302B /* MedicationStore.swift */,
+				5432E4A42C4D5E590090504B /* PersistenceController.swift */,
+				5440086F2C4C66880062302B /* CoreDataStack.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +185,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5440085A2C4C5DC60062302B /* Preview Assets.xcassets in Resources */,
-				544008562C4C5DC60062302B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +195,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C228432C4EE5C400E56592 /* Medy.xcdatamodeld in Sources */,
+				5432E4A52C4D5E5A0090504B /* PersistenceController.swift in Sources */,
 				544008542C4C5DC30062302B /* ContentView.swift in Sources */,
 				544008522C4C5DC30062302B /* MedyApp.swift in Sources */,
+				5499B02A2C5ACB3300AED6DA /* ThemeManager.swift in Sources */,
+				5432E4A72C4D6C9B0090504B /* HomeView.swift in Sources */,
+				5446BDEA2C4FF85C0072254A /* SceneDelegate.swift in Sources */,
+				544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */,
+				5432E4AF2C4D90D40090504B /* GetDrugInfoView.swift in Sources */,
+				544008672C4C5ECB0062302B /* MedicationStore.swift in Sources */,
+				544008632C4C5E900062302B /* MedicationListView.swift in Sources */,
+				5432E4A92C4D6CA90090504B /* MoreView.swift in Sources */,
+				544008702C4C66880062302B /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +349,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -292,7 +359,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UtkuCoskun.Medy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,8 +388,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -330,7 +398,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = UtkuCoskun.Medy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +428,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54C228412C4EE5C400E56592 /* Medy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54C228422C4EE5C400E56592 /* Medy.xcdatamodel */,
+			);
+			currentVersion = 54C228422C4EE5C400E56592 /* Medy.xcdatamodel */;
+			name = Medy.xcdatamodeld;
+			path = "/Users/utku/Desktop/App Projects/Medy/Medy/Stores/Medy.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 544008462C4C5DC30062302B /* Project object */;
 }
