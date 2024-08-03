@@ -1,10 +1,3 @@
-//
-//  MedicationListView.swift
-//  Medy
-//
-//  Created by Utku on 21/07/24.
-//
-
 import SwiftUI
 import UserNotifications
 
@@ -28,27 +21,41 @@ struct MedicationListView: View {
             }
 
             List {
-                ForEach(store.medications, id: \.self) { medication in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(medication.name ?? "Unknown Name")
-                            Text(medication.dosage ?? "Unknown Dosage")
-                            Text(medication.frequency ?? "Unknown Frequency")
-                            Text("\(medication.date ?? Date(), formatter: DateFormatter.short)")
-                        }
-                        Spacer()
-                        Button(action: {
-                            store.toggleMedicationTaken(medication: medication)
-                        }) {
-                            Image(systemName: medication.isTaken ? "checkmark.circle.fill" : "circle")
-                        }
-                        if editing {
+                if store.medications.isEmpty {
+                    VStack {
+                        Image(systemName: "pills")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(.gray)
+                        Text("No Medications Available")
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                } else {
+                    ForEach(store.medications, id: \.self) { medication in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(medication.name ?? "Unknown Name")
+                                Text(medication.dosage ?? "Unknown Dosage")
+                                Text(medication.frequency ?? "Unknown Frequency")
+                                Text("\(medication.date ?? Date(), formatter: DateFormatter.short)")
+                            }
+                            Spacer()
                             Button(action: {
-                                store.deleteMedication(medication: medication)
-                                showAlert = true
+                                store.toggleMedicationTaken(medication: medication)
                             }) {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
+                                Image(systemName: medication.isTaken ? "checkmark.circle.fill" : "circle")
+                            }
+                            if editing {
+                                Button(action: {
+                                    store.deleteMedication(medication: medication)
+                                    showAlert = true
+                                }) {
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                }
                             }
                         }
                     }
@@ -56,23 +63,12 @@ struct MedicationListView: View {
             }
             .navigationTitle("Medications")
 
-            TextField("Medication Name", text: $name)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            TextField("Dosage", text: $dosage)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            TextField("Frequency", text: $frequency)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            DatePicker("Select Date and Time", selection: $date, displayedComponents: [.date, .hourAndMinute])
-                .padding()
-            Button(action: {
-                store.addMedication(name: name, dosage: dosage, frequency: frequency, isTaken: false, date: date)
-                showAlert = true
-                scheduleNotification(for: name, at: date)
-            }) {
+            NavigationLink(destination: AddMedicationView(store: store)) {
                 Text("Add Medication")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(8)
             }
             .padding()
         }
@@ -100,17 +96,10 @@ struct MedicationListView: View {
     }
 }
 
-extension DateFormatter {
-    static var short: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
-        return formatter
-    }
-}
-
 struct MedicationListView_Previews: PreviewProvider {
     static var previews: some View {
         MedicationListView(store: MedicationStore(context: PersistenceController.preview.container.viewContext), showAlert: .constant(false), editing: .constant(false))
     }
 }
+
+

@@ -37,10 +37,8 @@ struct GetDrugInfoView: View {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             if !drugInfo.isEmpty {
-                                Text(drugName)
-                                    .font(.title)
-                                    .fontWeight(.bold)
                                 
+                            
                                 if let purpose = drugInfo["Purpose"] {
                                     Group {
                                         Text("Purpose:")
@@ -109,6 +107,7 @@ struct GetDrugInfoView: View {
                             }
                         }
                         .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
                 
@@ -119,10 +118,10 @@ struct GetDrugInfoView: View {
                     .padding(.top)
                 Text("This information is for general informational purposes and has been compiled from internet searches. For accurate and reliable medical information, please consult your doctor or healthcare professionals.")
                     .font(.footnote)
-                    .foregroundColor(.gray)
                     .padding()
-                    .background(Color.white)
                     .cornerRadius(8)
+                    
+                                        
             }
             .padding()
             .navigationTitle("Get Drug Info")

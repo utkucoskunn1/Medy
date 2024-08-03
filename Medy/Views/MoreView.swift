@@ -1,10 +1,3 @@
-//
-//  MoreView.swift
-//  Medy
-//
-//  Created by Utku on 21/07/24.
-//
-
 import SwiftUI
 
 struct MoreView: View {
@@ -14,8 +7,18 @@ struct MoreView: View {
         NavigationView {
             Form {
                 Section(header: Text("Settings")) {
-                    Toggle(isOn: $themeManager.isDarkMode) {
-                        Text("Dark Mode")
+                    NavigationLink(destination: SettingsView()) {
+                        Text("Settings")
+                    }
+                }
+                Section(header: Text("Account")) {
+                    NavigationLink(destination: AccountView()) {
+                        Text("Account")
+                    }
+                }
+                Section(header: Text("Help & Support")) {
+                    NavigationLink(destination: HelpSupportView()) {
+                        Text("Help & Support")
                     }
                 }
             }

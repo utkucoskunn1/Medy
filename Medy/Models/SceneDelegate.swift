@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Medy
-//
-//  Created by Utku on 23/07/24.
-//
-
 import UIKit
 import SwiftUI
 import CoreData
@@ -17,10 +10,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let context = PersistenceController.shared.container.viewContext
-        let store = MedicationStore(context: context)
+        let medicationStore = MedicationStore(context: context)
+        let appointmentStore = AppointmentStore(context: context)
 
         // SwiftUI view oluşturma
-        let contentView = HomeView(store: store).environment(\.managedObjectContext, context)
+        let contentView = HomeView(medicationStore: medicationStore, appointmentStore: appointmentStore)
+            .environment(\.managedObjectContext, context)
 
         // UIWindow initialization
         let window = UIWindow(windowScene: windowScene)

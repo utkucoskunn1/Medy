@@ -19,6 +19,14 @@
 		544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544BD2CF2C5005B8004ACC03 /* SectionView.swift */; };
 		54629C5B2C5C14E50011FDC2 /* GetDrugInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C5A2C5C14E50011FDC2 /* GetDrugInfoView.swift */; };
 		54629C5D2C5C15130011FDC2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54629C5C2C5C15130011FDC2 /* Config.plist */; };
+		54629C5F2C5E5D9C0011FDC2 /* AddMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C5E2C5E5D9C0011FDC2 /* AddMedicationView.swift */; };
+		54629C672C5E75A50011FDC2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C662C5E75A50011FDC2 /* AccountView.swift */; };
+		54629C692C5E75B80011FDC2 /* HelpSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C682C5E75B80011FDC2 /* HelpSupportView.swift */; };
+		54629C6B2C5E75C60011FDC2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C6A2C5E75C60011FDC2 /* SettingsView.swift */; };
+		54629C6D2C5E7B270011FDC2 /* AddAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C6C2C5E7B270011FDC2 /* AddAppointmentView.swift */; };
+		54629C6F2C5E8A5E0011FDC2 /* AppointmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C6E2C5E8A5E0011FDC2 /* AppointmentStore.swift */; };
+		54629C712C5E98640011FDC2 /* AppointmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C702C5E98640011FDC2 /* AppointmentListView.swift */; };
+		54629C732C5E99030011FDC2 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54629C722C5E99030011FDC2 /* DateFormatterExtensions.swift */; };
 		5499B02A2C5ACB3300AED6DA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499B0292C5ACB3300AED6DA /* ThemeManager.swift */; };
 		54C228432C4EE5C400E56592 /* Medy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C228412C4EE5C400E56592 /* Medy.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -41,6 +49,14 @@
 		544BD2CF2C5005B8004ACC03 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		54629C5A2C5C14E50011FDC2 /* GetDrugInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrugInfoView.swift; sourceTree = "<group>"; };
 		54629C5C2C5C15130011FDC2 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		54629C5E2C5E5D9C0011FDC2 /* AddMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationView.swift; sourceTree = "<group>"; };
+		54629C662C5E75A50011FDC2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		54629C682C5E75B80011FDC2 /* HelpSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSupportView.swift; sourceTree = "<group>"; };
+		54629C6A2C5E75C60011FDC2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		54629C6C2C5E7B270011FDC2 /* AddAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentView.swift; sourceTree = "<group>"; };
+		54629C6E2C5E8A5E0011FDC2 /* AppointmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentStore.swift; sourceTree = "<group>"; };
+		54629C702C5E98640011FDC2 /* AppointmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListView.swift; sourceTree = "<group>"; };
+		54629C722C5E99030011FDC2 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensions.swift; path = ../Stores/DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		5499B0292C5ACB3300AED6DA /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		54C228422C4EE5C400E56592 /* Medy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medy.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,11 +117,18 @@
 				544008532C4C5DC30062302B /* ContentView.swift */,
 				5432E4A62C4D6C9B0090504B /* HomeView.swift */,
 				544008622C4C5E900062302B /* MedicationListView.swift */,
-				5432E4A82C4D6CA90090504B /* MoreView.swift */,
+				54629C5E2C5E5D9C0011FDC2 /* AddMedicationView.swift */,
+				54629C702C5E98640011FDC2 /* AppointmentListView.swift */,
+				54629C6C2C5E7B270011FDC2 /* AddAppointmentView.swift */,
 				54629C5A2C5C14E50011FDC2 /* GetDrugInfoView.swift */,
+				5432E4A82C4D6CA90090504B /* MoreView.swift */,
+				54629C662C5E75A50011FDC2 /* AccountView.swift */,
+				54629C682C5E75B80011FDC2 /* HelpSupportView.swift */,
+				54629C6A2C5E75C60011FDC2 /* SettingsView.swift */,
 				5499B0292C5ACB3300AED6DA /* ThemeManager.swift */,
-				544BD2CF2C5005B8004ACC03 /* SectionView.swift */,
+				54629C722C5E99030011FDC2 /* DateFormatterExtensions.swift */,
 				54629C5C2C5C15130011FDC2 /* Config.plist */,
+				544BD2CF2C5005B8004ACC03 /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +147,7 @@
 			children = (
 				5446BDE92C4FF85C0072254A /* SceneDelegate.swift */,
 				544008662C4C5ECB0062302B /* MedicationStore.swift */,
+				54629C6E2C5E8A5E0011FDC2 /* AppointmentStore.swift */,
 				5432E4A42C4D5E590090504B /* PersistenceController.swift */,
 				5440086F2C4C66880062302B /* CoreDataStack.swift */,
 			);
@@ -200,16 +224,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C228432C4EE5C400E56592 /* Medy.xcdatamodeld in Sources */,
+				54629C692C5E75B80011FDC2 /* HelpSupportView.swift in Sources */,
 				5432E4A52C4D5E5A0090504B /* PersistenceController.swift in Sources */,
 				544008542C4C5DC30062302B /* ContentView.swift in Sources */,
 				544008522C4C5DC30062302B /* MedyApp.swift in Sources */,
+				54629C6B2C5E75C60011FDC2 /* SettingsView.swift in Sources */,
+				54629C712C5E98640011FDC2 /* AppointmentListView.swift in Sources */,
 				5499B02A2C5ACB3300AED6DA /* ThemeManager.swift in Sources */,
 				5432E4A72C4D6C9B0090504B /* HomeView.swift in Sources */,
 				5446BDEA2C4FF85C0072254A /* SceneDelegate.swift in Sources */,
 				544BD2D02C5005B8004ACC03 /* SectionView.swift in Sources */,
+				54629C6F2C5E8A5E0011FDC2 /* AppointmentStore.swift in Sources */,
+				54629C6D2C5E7B270011FDC2 /* AddAppointmentView.swift in Sources */,
+				54629C732C5E99030011FDC2 /* DateFormatterExtensions.swift in Sources */,
 				54629C5B2C5C14E50011FDC2 /* GetDrugInfoView.swift in Sources */,
+				54629C672C5E75A50011FDC2 /* AccountView.swift in Sources */,
 				544008672C4C5ECB0062302B /* MedicationStore.swift in Sources */,
 				544008632C4C5E900062302B /* MedicationListView.swift in Sources */,
+				54629C5F2C5E5D9C0011FDC2 /* AddMedicationView.swift in Sources */,
 				5432E4A92C4D6CA90090504B /* MoreView.swift in Sources */,
 				544008702C4C66880062302B /* CoreDataStack.swift in Sources */,
 			);

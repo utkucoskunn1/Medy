@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @StateObject private var store: MedicationStore
+    @StateObject private var medicationStore: MedicationStore
+    @StateObject private var appointmentStore: AppointmentStore
 
     init() {
         let context = PersistenceController.shared.container.viewContext
-        _store = StateObject(wrappedValue: MedicationStore(context: context))
+        _medicationStore = StateObject(wrappedValue: MedicationStore(context: context))
+        _appointmentStore = StateObject(wrappedValue: AppointmentStore(context: context))
     }
 
     @State private var showAlert = false
@@ -23,17 +25,21 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 TabView {
-                    HomeView(store: store)
+                    HomeView(medicationStore: medicationStore, appointmentStore: appointmentStore)
                         .tabItem {
                             Label("Home", systemImage: "house")
                         }
-                    MedicationListView(store: store, showAlert: $showAlert, editing: $editing)
+                    MedicationListView(store: medicationStore, showAlert: $showAlert, editing: $editing)
                         .tabItem {
-                            Label("Medication List", systemImage: "list.bullet")
+                            Label("Medication", systemImage: "list.bullet")
                         }
                     GetDrugInfoView()
                         .tabItem {
-                            Label("Get Drug Info", systemImage: "magnifyingglass")
+                            Label("AI Assistant", systemImage: "magnifyingglass")
+                        }
+                    AppointmentListView(store: appointmentStore)
+                        .tabItem {
+                            Label("Appointment", systemImage: "calendar")
                         }
                     MoreView()
                         .tabItem {
